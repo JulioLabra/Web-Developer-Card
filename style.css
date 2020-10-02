@@ -1,0 +1,20 @@
+
+/* ----- structure ------- */
+body {
+    background-color: rgb(129, 129, 129);  
+}
+
+header {
+    height: 500 px;
+    background-color: rgb(224, 224, 224);
+}
+footer {
+    background-color: bisque;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center {
+    text-align: center;
+}
