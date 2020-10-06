@@ -1,20 +1,143 @@
-
-/* ----- structure ------- */
-body {
-    background-color: rgb(129, 129, 129);  
+/* Set All HTML elements with border-box sizing */
+/*Should I set the box sizing in HTML?*/
+* {
+  box-sizing: border-box;
 }
+/* ----- structure ------- */
+
 
 header {
-    height: 500 px;
-    background-color: rgb(224, 224, 224);
+  background-color: rgb(162, 165, 1);
+  margin-top: 0px;
+  margin-bottom: 50px;
+  margin-right: 0px;
+  margin-left: 0px;
+  text-align: center;
+}
+body {
+  background-color: rgb(255, 175, 28);
+  margin: 0px 0px 0px 0px;
+}
+main {
+  margin: 0px 0px 0px 0px;
 }
 footer {
-    background-color: bisque;
+  background-color: rgb(144, 136, 156);
+  margin: 200px 0px 0px 0px;
+  padding: 20px 0 40px 0;
 }
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
+article {
+    padding: 45px 0 45px 0;
+    margin: 80px 105px 0 105px;
+    background-color: rgb(165, 159, 224);
+    border-radius: 80px;
 }
 
+nav {
+    background-color: rgb(165, 159, 224);
+    padding: 5px 0 5px 0;
+  }
+
+/* ----- format text ------ */
 .center {
-    text-align: center;
+  text-align: center;
+}
+h1 {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 80px;
+  color: rgb(226, 233, 244);
+  margin: 0 0 30px 0;
+  letter-spacing: 5px;
+}
+h2 {
+  font-family: "Comfortaa", cursive;
+  font-size: 40px;
+  color: rgb(79, 62, 124);
+  margin: 0px 0px 50px 0px;
+  font-style: italic;
+}
+h3 {
+  font-family: "Sansita Swashed", cursive;
+  color: rgb(79, 62, 124);
+  font-size: 55px;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(226, 233, 244);
+  font-size: 22px;
+
+  padding: 0 85px 40px 85px;
+}
+a {
+  font-family: "Comfortaa", cursive;
+  font-size: 28px;
+  padding: 6px 100px 6px 100px;
+}
+a:link {
+  color: rgb(71, 71, 87);
+}
+a:visited {
+  color: rgb(92, 100, 81);
+}
+a:hover {
+  color: rgb(86, 60, 116);
+}
+a:active {
+  color: rgb(190, 170, 81);
+}
+
+ul {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(226, 233, 244);
+  font-size: 22px;
+
+  display: table;
+  margin:  auto;
+  padding-bottom: 40px;
+}
+ol {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(226, 233, 244);
+    font-size: 22px;
+  
+    display: table;
+    margin: auto;
+    padding-bottom: 40px;
+  }
+.column {
+  float: left;
+  width: 30%;
+  padding: 20px 20px 20px 20px;
+  margin: 20px 10px 20px 20px;
+  border-radius: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: none;
+}
+hr {
+    height: 15px;
+    background-color:  rgb(255, 175, 28);
+    border: none;
+    
+}
+/* ----- format image ----- */
+img {
+  max-width: 100%;
+  height: auto;
+}
+img {
+  border-radius: 10px;
+}
+.text_zoom{
+    font-size: 100%;
+}
+.zoom {
+  transition: transform 0.25s ease;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.5); /* or some other value */
+  transform: scale(1.5);
 }
