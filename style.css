@@ -1,11 +1,9 @@
 /* Set All HTML elements with border-box sizing */
-/*Should I set the box sizing in HTML?*/
 * {
   box-sizing: border-box;
 }
 /* ----- structure ------- */
-
-
+/*This is the styling properties for the semantic containers */
 header {
   background-color: rgb(162, 165, 1);
   margin-top: 0px;
@@ -39,6 +37,8 @@ nav {
   }
 
 /* ----- format text ------ */
+/*This is the styling properites for the text html elements*/
+/*this centers all text it is applied to */
 .center {
   text-align: center;
 }
@@ -73,6 +73,9 @@ a {
   font-size: 28px;
   padding: 6px 100px 6px 100px;
 }
+/*This code creates pseudo classes that change the state of an element after 
+it has been activated. It is vital that the code is setup in this order 
+for it to work properly*/
 a:link {
   color: rgb(71, 71, 87);
 }
@@ -85,7 +88,7 @@ a:hover {
 a:active {
   color: rgb(190, 170, 81);
 }
-
+/*the ul and ol are here to style the lists in html*/
 ul {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(226, 233, 244);
@@ -104,18 +107,21 @@ ol {
     margin: auto;
     padding-bottom: 40px;
   }
+  /*The column class selector is styled here*/
 .column {
   float: left;
   width: 30%;
   padding: 20px 20px 20px 20px;
-  margin: 20px 10px 20px 20px;
+  margin: 80px 0px 20px 20px;
   border-radius: 10px;
 }
+/*the row class selector is styled here to add space between the columns*/
 .row:after {
   content: "";
   display: table;
   clear: none;
 }
+/*I've modified the horizontal rows to be thicker*/
 hr {
     height: 15px;
     background-color:  rgb(255, 175, 28);
@@ -123,20 +129,24 @@ hr {
     
 }
 /* ----- format image ----- */
+/*The img have been styled to change size as the browser is adjusted*/
 img {
   max-width: 100%;
   height: auto;
 }
+/*the radius of images have been adjusted to have a subtle curve*/
 img {
   border-radius: 10px;
 }
+/*This allows for the images that call the selector class to zoom when hovered over*/
 .text_zoom{
     font-size: 100%;
 }
+/*This allows for the transition beteen the full text_zoom to transition smoothly*/
 .zoom {
   transition: transform 0.25s ease;
 }
-
+/*this selector allows the action to happen when the cursor hovers over the image*/
 .zoom:hover {
   -webkit-transform: scale(1.5); /* or some other value */
   transform: scale(1.5);
