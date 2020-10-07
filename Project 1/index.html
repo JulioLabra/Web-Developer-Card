@@ -1,0 +1,155 @@
+<!--- My Meta Code is placed here in the beginning to make it compaitable to web browsers----> 
+<!DOCTYPE html>
+<!---This is where I link my html code to the css styl sheet--->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-widty" />
+    <title>Julio Labra</title>
+    <!--I've added google fonts here to be used in my webpage to add style to the page-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Sansita+Swashed:wght@700&display=swap"
+      rel="stylesheet"/>
+      <!--This connects the css code with the html code-->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <!--The body is where the content that will be displayed on the browser will be written-->
+  <body>
+    <!-- The header is going to be located at the top of the page and display my name and contain navigation links to my website, linkedin and github-->
+    <header>
+      <!--For this div I've added an id that is accessed at the bottom of the page to direct viewers to my links if they want to contact me-->
+      <div id="contact">
+        <h1>Julio Labra</h1>
+        <h2>Web Developer</h2>
+        <!--My navigation bar is placed near the top so viewers can immedietly move to my portfolio-->
+        <nav class="box">
+          <!--I've placed my github, linkedin and personal website as links using <a href></a>-->
+          <a href="http://juliolabra.com" target="_blank">Website</a>
+          <a
+            href="https://www.linkedin.com/in/julio-labra-2656ba37/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/JulioLabra" target="_blank">GitHub</a>
+        </nav>
+      </div>
+    </header>
+    <!--The main section is for my information and literature on my profile-->
+    <main>
+      <!--I've added a class to this dive to center the main section of my code to unify the whole page-->
+      <div class="center">
+        <!--My photo has been styled in css to have rounded borders and to adjut to the size of the screen.-->
+        <img src="images/mask.jpg" alt="Julio wearing a mask" />
+        <div>
+          <!--the articles will be used to hold my text and lists-->
+          <article> 
+            <!--h3 headers will be similar in style to the header except that they are smaller and a darker color-->
+            <h3>Hi! I'm Julio Thinkful</h3>
+            <!--I've styled this horizontal row to add emphasis under the h3 headers-->
+            <hr style="height: 2px; width: 320px;">
+            <p>I'm a web developer living in Denver, Colorado.</p>
+             <!--I've styled this horizontal row in css to span the distance of the padding to create aesthetically pleasing line breaks between subjects. I'll be doing this after each paragraph and before each h3-->
+            <hr/>
+            <h3>About Myself</h3>
+            <hr style="height: 2px; width: 320px;">
+            <p>
+              I've been working in the art world as a studio artist for the past ten years. 
+              <br>
+              I had the opportunity to work as a curator and professor while
+              living in California, but my interests have lead me to working in the
+              tech field.
+            </p>
+            <hr>
+            <h3>My Interests</h3>
+            <hr style="height: 2px; width: 320px;">
+            <p>As a studio artist my interests include:</p>
+            <!--I've added css code to prevent the bullet points from shiftin to the far left without the lines 94-95 in the css file the bullets will shift to the left--->
+            <ul>
+              <li>Painting</li>
+              <!--Line breaks were inserted between the bullet points to give them space to breathe, this is repeated in all the  following lists-->
+              <br>
+              <li>Drawing</li>
+              <br>
+              <li>Photoshop</li>
+            </ul>
+          </article> 
+        </div>
+        <!--I've add a floating row of columns to hold examples of my interests. This looks visually appealing on a fully opened web browser, but presents issues with space when the window is shrunk-->
+        <div class="row">
+          <!--I've styled each column directly to make adjustments directly in the html-->
+          <div class="column" style="background-color: rgb(123, 109, 216)">
+            <!--I have a bug here with the text as it won't change size to fit the frame of the box when changing the scale of the web browser-->
+            <h2 style="color: rgb(92, 247, 247);">PAINTING</h2>
+            <hr style="height: 2px; width: 250px;">
+            <!--The zoom class added to this img so when hovered over the image would expand and show more details-->
+            <img
+              class="zoom"
+              src="images/nana-reading.jpg"
+              alt="A painting of a young woman reading a book in bed"
+            />
+            <p style="font-style: italic;">Gouache Paintings</p>
+          </div>
+          <div class="column" style="background-color: rgb(142, 130, 214)">
+            <h2 style="color: rgb(92, 247, 247);">DRAWING</h2>
+            <hr style="height: 2px; width: 250px;">
+            <img
+              class="zoom"
+              src="images/umbrella.jpg"
+              alt="A drawging of a Multi-Armed Woman standing under an umbrella"
+            />
+            <p style="font-style: italic;">Works on Paper</p>
+          </div>
+          <div class="column" style="background-color: rgb(152, 143, 212)">
+            <h2 style="color: rgb(92, 247, 247)"">PHOTOSHOP</h2>
+            <hr style="height: 2px; width: 250px;">
+            <img
+              class="zoom"
+              src="images/after-dark.jpg"
+              alt="Digital illustration of two women's heads"
+            />
+            <p style="font-style: italic;">Digital Illustration</p>
+          </div>
+        </div>
+        <!--This div was inserted to create an empty box to add space between the first article and the second. I couldn't figure out how to create seperation between these to in another way since the object above is floting.-->
+        <div style="height: 800px;"></div>
+        <div>
+          <article>
+            <!---->
+            <h3>Motivation</h3>
+            <hr style="height: 2px; width: 320px;">
+            <p>
+            Since starting my web development career I've discovered a deeper
+            appreciation for web developers. 
+            <br>
+            My favorite things about web development are:
+            <!--I've added css code to prevent the bullet points from shiftin to the far left without the lines 103-104 in the css file the bullets will shift to the left--->
+            <ol>
+              <li>The Friendly Community</li>
+              <br>
+              <!--an &ensp was placed here to add a space to the text because it wasn't alligning with the other text-->
+              <li>&ensp;The Technical Challenges</li>
+              <br>
+              <li>The Friendly Community</li>
+            </ol>
+            </p>
+            <hr>
+            <h3>Contact</h3>
+            <hr style="height: 2px; width: 320px;">
+            <p>Please take a look at my website and feel free to Contact Me!</p>
+            <!--I've placed a link button to the top of my page so that it scrolls back to the top where the navigation bar is located-->
+            <a href="#contact" class="button"><bold>Links</bold></a>
+          </article>
+        </div>
+      </div>
+    </main>
+    <!--The footer is going to contain my name and copyright information -->
+    <footer>
+      <!--Since this is outside of the main section I had to create a div class with the center css key-->
+      <div class="center">
+        <p>©Julio Labra</p>
+      </div>
+    </footer>
+    <!--This links the javascript code to the html. Even though there is none it is still good standard to have it at all times-->
+    <script src="sript.js"></script>
+  </body>
+</html>
